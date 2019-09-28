@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/twitchcon/okgamers-graph#readme",
   "dependencies": {
+    "chart.js": "^2.8.0",
     "parcel-bundler": "^1.12.3"
   },
   "devDependencies": {
