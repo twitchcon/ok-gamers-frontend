@@ -4,7 +4,7 @@
 
 
 // Imports ------------------------------------ /
-@import 'reset', 'theme';
+@import 'reset';
 
 
 // Base --------------------------------------- /
@@ -17,16 +17,9 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul, button, input {
   letter-spacing: 0.5px;
 }
 
-#root {
+body {
   display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
-  font-family: sans-serif;
-  min-height: 100vh;
-  padding-top: 64px;
-}
-
-.btn__delete {
-  margin-top: 32px;
+  height: 100vh;
 }
