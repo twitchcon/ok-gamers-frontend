@@ -1,0 +1,32 @@
+// ==============================================
+//  Master
+// ==============================================
+
+
+// Imports ------------------------------------ /
+@import 'reset', 'theme';
+
+
+// Base --------------------------------------- /
+html {
+  scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, button, input {
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+}
+
+#root {
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  font-family: sans-serif;
+  min-height: 100vh;
+  padding-top: 64px;
+}
+
+.btn__delete {
+  margin-top: 32px;
+}

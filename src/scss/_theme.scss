@@ -1,0 +1,100 @@
+// ==============================================
+//  Theme
+// ==============================================
+
+
+// Variables ---------------------------------- /
+$anchor-color-default: #f2f2f2;
+$anchor-color-hover: darken($anchor-color-default, 4%);
+$anchor-color-focus: darken($anchor-color-default, 8%);
+$anchor-transition-speed: 200ms;
+
+$button-background-color-default: #ddd;
+$button-background-color-hover: darken($button-background-color-default, 4%);
+$button-background-color-focus: darken($button-background-color-default, 8%);
+
+// Base --------------------------------------- /
+.anchor {
+  background-color: $anchor-color-default;
+  border-radius: 4px;
+  color: #404040;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  font-size: 14px;
+  height: 36px;
+  padding: 0 16px;
+  text-decoration: none;
+  transition: background-color $anchor-transition-speed;
+
+  &:hover {
+    background-color:$anchor-color-hover;
+  }
+
+  &:focus {
+    background-color: $anchor-color-focus;
+    outline: none;
+  }
+}
+
+// Button ------------------------------------- /
+.btn {
+  background-color: $button-background-color-default;
+  border: none;
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  height: 36px;
+  outline: none;
+  padding: 0 24px;
+  transition: background-color 200ms;
+
+  &:hover {
+    background-color: $button-background-color-hover;
+  }
+
+  &:focus {
+    background-color: $button-background-color-focus;
+  }
+
+  &--blue {
+    background-color: #1a73e8;
+    color: #fff;
+
+    &:hover {
+      background-color: #1c7eff;
+    }
+
+    &:focus {
+      background-color: #1966ca;
+    }
+  }
+
+  &__close {
+    border-radius: 50%;
+    font-size: 24px;
+    height: 32px;
+    padding: 0;
+    width: 32px;
+
+    &--warning {
+      background: none;
+      color: #d31919;
+
+      &:hover {
+        background-color: darken(#ffdce0, 2%);
+      }
+
+      &:focus {
+        background-color: darken(#ffdce0, 4%);
+      }
+    }
+  }
+}
+
+// Load --------------------------------------- /
+.img__load {
+  height: 100px;
+  width: 100px;
+}
