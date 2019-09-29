@@ -1,3 +1,5 @@
+// Fetch every 1000 milliseconds
+// setInterval(
 fetch(`127.0.0.1:5000/votes`, { method: "GET" })
   .then(response => {
     return response.json();
@@ -7,4 +9,5 @@ fetch(`127.0.0.1:5000/votes`, { method: "GET" })
   })
   .catch(err => {
     console.error(err);
-  });
+  })
+  // , 1000);
