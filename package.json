@@ -4,7 +4,10 @@
   "description": "Twitch Extension increased for viewer and streamer interaction",
   "main": "",
   "scripts": {
-    "dev": "parcel src/index.html --port 8080 -d devserver/ --global index --open"
+    "dev": "parcel src/index.html --port 8080 -d dist/devserver/ --global index --open",
+    "build": "parcel build src/index.html -d dist/production/ --no-source-maps --public-url ./",
+    "dependencies:update": "npx npm-check-updates -u && npm i",
+    "dependencies:remove": "rm -R node_modules"
   },
   "repository": {
     "type": "git",
