@@ -38,14 +38,9 @@ setInterval(() => {
               backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
               data: votes.votes,
             }]
-          }
+          };
         
-        chart.config.options = {
-            title: {
-              display: true,
-              text: votes.title,
-            }
-        }
+        chart.config.title = votes.title;
         
         chart.update(0);
         console.error(votes)
