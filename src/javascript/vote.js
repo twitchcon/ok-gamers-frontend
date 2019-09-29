@@ -16,8 +16,7 @@ var chart = new Chart(ctx, {
   options: {
     title: {
       display: true,
-      fontSize: 25,
-      text: 'Should we go left or right?'
+      text: 'Should we go left or right?',
     }
   }
 });
