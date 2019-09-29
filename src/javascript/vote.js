@@ -2,7 +2,7 @@ import Chart from 'chart.js';
 import {votes} from './api.js';
 
 var ctx = document.getElementById('graph').getContext('2d');
-new Chart(ctx, {
+var chart = new Chart(ctx, {
   type: 'pie',
 
   data: {
@@ -20,5 +20,9 @@ new Chart(ctx, {
     }
   }
 });
+
+setInterval(() => {
+    chart.update();
+}, 1000)
 
 console.log(votes);
