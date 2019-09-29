@@ -9,6 +9,7 @@ setInterval(() => {
       .then(response => {
         let { data } = response;
         votes = data
+        console.error(votes)
       })
       .catch(err => {
         console.error(err);
