@@ -1,22 +1,24 @@
 import Chart from 'chart.js';
+import voice from '../data/data.json';
 
 var ctx = document.getElementById('graph').getContext('2d');
 var chart = new Chart(ctx, {
   type: 'pie',
 
   data: {
-    labels: ["Yes", "No"],
+    labels: voice.data.labels,
     datasets: [{
-      label: "Population (millions)",
       backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-      data: [2478, 5267]
+      data: voice.data.votes,
     }]
   },
 
   options: {
     title: {
       display: true,
-      text: 'Should we go left or right?',
+      text: voice.data.title,
     }
   }
 });
+
+console.log(voice.data);
