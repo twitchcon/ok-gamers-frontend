@@ -2,7 +2,7 @@ import Chart from 'chart.js';
 import voice from '../data/data.json';
 
 var ctx = document.getElementById('graph').getContext('2d');
-var chart = new Chart(ctx, {
+new Chart(ctx, {
   type: 'pie',
 
   data: {
@@ -21,4 +21,4 @@ var chart = new Chart(ctx, {
   }
 });
 
-console.log(voice.data);
+// console.log(voice.data);
