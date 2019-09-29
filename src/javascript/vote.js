@@ -1,6 +1,6 @@
 import Chart from 'chart.js';
 
-var votes = {};
+var votes = {title: "No ongoing poll!", labels: [], votes: []};
 var ctx = document.getElementById('graph').getContext('2d');
 
 var chart = new Chart(ctx, {
@@ -39,7 +39,15 @@ setInterval(() => {
               data: votes.votes,
             }]
           }
-        chart.update();
+        
+        chart.config.options = {
+            title: {
+              display: true,
+              text: votes.title,
+            }
+        }
+        
+        chart.update(0);
         console.error(votes)
       })
       .catch(err => {
