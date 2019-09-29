@@ -1,24 +1,24 @@
 import Chart from 'chart.js';
-import voice from '../data/data.json';
+import {votes} from './api.js';
 
 var ctx = document.getElementById('graph').getContext('2d');
 new Chart(ctx, {
   type: 'pie',
 
   data: {
-    labels: voice.data.labels,
+    labels: votes.labels,
     datasets: [{
       backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-      data: voice.data.votes,
+      data: votes.votes,
     }]
   },
 
   options: {
     title: {
       display: true,
-      text: voice.data.title,
+      text: votes.title,
     }
   }
 });
 
-// console.log(voice.data);
+console.log(votes);
