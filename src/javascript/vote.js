@@ -1,6 +1,8 @@
 import Chart from 'chart.js';
 
+var votes = {};
 var ctx = document.getElementById('graph').getContext('2d');
+
 var chart = new Chart(ctx, {
   type: 'pie',
 
@@ -28,7 +30,8 @@ setInterval(() => {
       })
       .then(response => {
         let { data } = response;
-        let votes = data
+        votes = data
+        
         chart.config.data = {
             labels: votes.labels,
             datasets: [{
