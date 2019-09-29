@@ -24,7 +24,7 @@ var chart = new Chart(ctx, {
 
 // Fetch every 1000 milliseconds
 setInterval(() => {
-    fetch(`http://127.0.0.1:5000/votes`, { method: "GET" })
+    fetch(`http://10.37.1.72:5000/votes`, { method: "GET" })
       .then(response => {
         return response.json();
       })
