@@ -31,7 +31,7 @@ setInterval(() => {
       .then(response => {
         let { data } = response;
         votes = data
-        
+
         chart.config.data = {
             labels: votes.labels,
             datasets: [{
@@ -39,9 +39,9 @@ setInterval(() => {
               data: votes.votes,
             }]
           };
-        
-        chart.config.title = votes.title;
-        
+
+        chart.options.title.text = votes.title;
+
         chart.update(0);
         console.error(votes)
       })
