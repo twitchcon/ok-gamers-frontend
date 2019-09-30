@@ -1,25 +1,23 @@
 {
-  "name": "okgamers-graph",
-  "version": "0.0.1",
-  "description": "Twitch Extension increased for viewer and streamer interaction",
+  "name": "ok-gamers-frontend",
+  "version": "1.0.0",
+  "description": "Ok Gamers graph frontend and visualization component for Twitch extension that increase interaction with streamer voice control for polling for viewers",
   "main": "",
   "scripts": {
     "dev": "parcel src/index.html --port 8080 -d dist/devserver/ --global index --open",
-    "build": "parcel build src/index.html -d dist/production/ --no-source-maps --public-url ./",
-    "dependencies:update": "npx npm-check-updates -u && npm i",
-    "dependencies:remove": "rm -R node_modules"
+    "build": "parcel build src/index.html -d dist/production/ --no-source-maps --public-url ./"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twitchcon/okgamers-graph.git"
+    "url": "git+https://github.com/twitchcon/ok-gamers-frontend.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/twitchcon/okgamers-graph/issues"
+    "url": "https://github.com/twitchcon/ok-gamers-frontend/issues"
   },
-  "homepage": "https://github.com/twitchcon/okgamers-graph#readme",
+  "homepage": "https://github.com/twitchcon/ok-gamers-frontend#readme",
   "dependencies": {
     "chart.js": "^2.8.0"
   },
