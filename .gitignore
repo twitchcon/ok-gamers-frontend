@@ -1,6 +1,11 @@
+# General
+.DS_Store
+
 # Node
 /node_modules
 
 # Parcel
+/node_modules
+/devserver
 /.cache
 /dist
